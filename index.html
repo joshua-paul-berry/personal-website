@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>Joshua Berry | Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Joshua Berry">
+        <meta name="description" content="The personal website of Joshua Berry acting as a digital CV and demonstration of understanding of HTML and CSS.">
+        <link rel="stylesheet" href="styles/stylesheet.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="js/ChangeTabs.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html">Info</a>
+        </nav>
+
+        <div class="content">
+            <div class="personal-info">
+                <div class="avatar">
+                    <img src="assets/images/avatar.jpg" alt="Avatar">
+                </div>
+                <div class="personal-details">
+                    <h1>Joshua Berry</h1>
+                    <hr>
+                    <p><strong>Location</strong>: Newport, South Wales, NP20</p>
+                    <p><strong>Mobile</strong>: 07593158180</p>
+                    <p><strong>Email</strong>: <a href="mailto:joshuaberry@protonmail.com">joshuaberry@protonmail.com</a></p>
+                    <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/joshua-paul-berry" target="blank">https://www.linkedin.com/in/joshua-paul-berry</a></p>
+                    <p><strong>GitHub</strong>: <a href="https://github.com/joshua-paul-berry" target="blank">https://github.com/joshua-paul-berry</a></p>
+                </div>
+            </div>
+
+            <div class="personal-history">
+                <div class="tabs">
+                    <button class="tabbtn" onclick="changeTab('employment')" id="defaultTab">Employment History</button>
+                    <button class="tabbtn" onclick="changeTab('education')">Education and Qualifications</button>
+                    <button class="tabbtn" onclick="changeTab('skills')">Skills</button>
+                </div>
+
+                <div id="employment" class="tabcontent">
+                    <h2>First Call Group Ltd. (March 2021 - September 2021)</h2>
+                    <h3>IT Team Leader / IT Support | Full Time</h3>
+                    <p>[Duties & Responsibilities]</p>
+                    <uo>
+                        <li>Led a small team for the design and creation of several websites</li>
+                        <li>Provided technical support for software and hardware issues</li>
+                        <li>Created technical documentation</li>
+                    </uo>
+                    <hr>
+                    <h2>The White Lion (November 2019 - March 2020)</h2>
+                    <h3>Bartender | Part Time</h3>
+                    <p>[Duties & Responsibilities]</p>
+                    <uo>
+                        <li>Prepared and served beverages</li>
+                        <li>Prepared and maintained bar area and venue</li>
+                        <li>Restocked and maintained appropriate stock levels</li>
+                        <li>Maintained cleanliness of bar area and venue</li>
+                    </uo>
+                </div>
+
+                <div id="education" class="tabcontent">
+                    <h2>University of South Wales (2017 - 2020)</h2>
+                    <p>BSc (Hons) Computer Science - 2:1</p>
+                    <p>[Notable Modules]</p>
+                    <uo>
+                        <li>C++ Programming</li>
+                        <li>Data Structures And Algorithms With Obejct-Oriented Programming</li>
+                        <li>Computer Networks</li>
+                        <li>Computer Systems Concepts</li>
+                        <li>Robotics and Autonomous Systems</li>
+                        <li>Final Year Individual Project (Robotics)</li>
+                    </uo>
+                    <hr>
+                    <h2>Coleg Gwent (2014 - 2017)</h2>
+                    <p>Level 3 Extended Diploma - D*DD</p>
+                    <hr>
+                    <h2>Newport High School (2009 - 2014)</h2>
+                    <p>GCSE Mathematics - A</p>
+                    <p>GCSE Statistics - C</p>
+                    <p>GCSE English Language - C</p>
+                </div>
+
+                <div id="skills" class="tabcontent">
+                    <p><strong>C++</strong>: I can develop software using the C++ programming language having extensively used it as the primary language to develop many of the applications used as part of my university assessments and exams.</p>
+                    <p><strong>Python</strong>: I can develop software using the Python programming language having also used it to develop several applications as part of my university assessments and selecting it as the language of choice for my final year individual project.</p>
+                    <p><strong>Website Development</strong>: I have some knowledge of using HTML, CSS & JavaScript to develop websites along with some experience designing websites using wireframing and prototyping tools such as Balsamiq and MockPlus.</p>
+                    <p><strong>Computer Networks</strong>: I have an understanding on how computer systems communicate over a network which includes the underlying mechanisms and technologies that are used such as: Local-Area and Wide-Area Networks, the TCP and UDP Internet Protocols and network traversal algorithms such as Dijkstra's Algorithm.</p>
+                    <p><strong>Teamwork</strong>: I can work and communicate well within a team having worked with a team through the design and creation of several websites and taken part in several team-based activities during my time at university such as developing software for a fictional company.</p>
+                    <p><strong>Organisation</strong>: I am able to both manage my time effectively and prioritise tasks and activities to suit the needs of a company or client, as well as able to work independently by planning my personal responsibilities to ensure I complete them to the best of my abilities and the highest of standards.</p>
+                    <p><strong>Written and Verbal Communication</strong>: I can confidently convey technical information that is easy to understand both through writing or verbally, to demonstrate my understanding of a problem and to explain the developed solution to a wide range of people of varying backgrounds, levels of understanding and skill sets.</p>
+                </div>
+
+                <script>document.getElementById("defaultTab").click()</script>
+            </div>
+        </div>
+
+        <footer>
+            <p>Source: <a href="https://github.com/joshua-paul-berry/personal-website" target="blank">https://github.com/joshua-paul-berry/personal-website</a></p>
+        </footer>
+    </body>
+</html>
