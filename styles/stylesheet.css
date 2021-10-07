@@ -3,12 +3,31 @@ body {
     padding: 0px;
     background: rgb(240, 240, 240);
     font-family:'Roboto', sans-serif;
+    font-size: 1em;
     line-height: 150%;
     word-wrap: break-word;
+    min-width: 400px;
+    min-height: auto;
+}
+
+hr {
+    margin: 30px 50px;
+    border: 0px;
+    border-top: 1px solid rgba(220, 220, 220, 0.50);
+}
+
+ul {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+li {
+    padding-top: 10px;
 }
 
 .navbar {
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
     background-color: rgb(45, 45 ,45);
@@ -21,38 +40,49 @@ body {
     text-decoration: none;
 }
 
-hr {
-    margin: 30px 50px;
-    border: 0px;
-    border-top: 1px solid rgba(220, 220, 220, 0.75);
-}
-
 .content {
     display: flex;
-    padding: 10px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 925px) {
+    .content {
+        flex-flow: column;
+    }
+    
+    .personal-info {
+        margin: 0px 0px 5px 0px !important;
+    }
+
+    .personal-history {
+        margin: 5px 0px 0px 0px !important;
+    }
 }
 
 .personal-info {
-    width: 33%;
-    margin-right: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0px 5px 0px 0px;
     background: white;
-    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .avatar {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
+    padding: 20px 10px 10px 10px;
 }
 
-img {
-    max-height: 250px;
+.avatar img {
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 
 .personal-details {
     text-align: center;
+    padding: 20px;
 }
 
 .personal-details a {
@@ -65,18 +95,21 @@ img {
 }
 
 .personal-history {
-    width: 66%;
-    margin-left: 5px;
+    flex: 2;
+    margin: 0px 0px 0px 5px;
     background: white;
-    box-shadow:2px 2px 4px 0px rgba(0,0,0,0.2);
+    box-shadow:2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    height: 100%;
 }
 
 .tabs {
+    display: flex;
     background-color: rgb(45, 45 ,45);
 }
 
 .tabs button {
-    padding:16px 24px;
+    flex: 1;
+    padding: 16px 24px;
     background-color: inherit;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -93,13 +126,12 @@ img {
 
 .tabcontent {
     display: none;
-    height: 502px;
     padding: 20px;
-    overflow-y: scroll;
 }
 
 footer {
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
     background-color: rgb(45, 45 ,45);
@@ -110,6 +142,7 @@ footer {
 
 footer a {
     color: white;
+    text-decoration: none;
 }
 
 footer a:hover {

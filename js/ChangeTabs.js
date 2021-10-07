@@ -1,5 +1,5 @@
 function changeTab(tab) {
-    var idx, tabContent, tabButtons;
+    var idx, tabContent;
 
     tabContent = document.getElementsByClassName("tabcontent");
 
